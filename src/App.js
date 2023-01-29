@@ -55,9 +55,10 @@ class App extends React.Component {
       cardAttr3,
     } = this.state;
     const total = 210;
-    return ((Number(cardAttr1) >= 0 && Number(cardAttr1) <= 90)
-      && (Number(cardAttr2) >= 0 && Number(cardAttr2) <= 90)
-      && (Number(cardAttr3) >= 0 && Number(cardAttr3) <= 90)
+    const number = 90;
+    return ((Number(cardAttr1) >= 0 && Number(cardAttr1) <= number)
+      && (Number(cardAttr2) >= 0 && Number(cardAttr2) <= number)
+      && (Number(cardAttr3) >= 0 && Number(cardAttr3) <= number)
       && (Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3) <= total));
   }
 
