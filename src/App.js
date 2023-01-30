@@ -10,6 +10,7 @@ class App extends React.Component {
     this.verifyInputsText = this.verifyInputsText.bind(this);
     this.verifyCardAttr = this.verifyCardAttr.bind(this);
     this.onSaveButtonClick = this.onSaveButtonClick.bind(this);
+    this.removeCard = this.removeCard.bind(this);
 
     this.state = {
       cardName: '',
@@ -105,6 +106,17 @@ class App extends React.Component {
     && cardDescription !== '' && cardImage !== '' && cardRare !== '');
   }
 
+  removeCard({ target }) {
+    const { saveCards, hasTrunfo } = this.state;
+    const myName = target.id;
+
+    const deleting = saveCards.filter((card) => card.cardName !== myName);
+    this.setState({
+      saveCards: deleting,
+      hasTrunfo: (!hasTrunfo),
+    });
+  }
+
   render() {
     const {
       cardName,
@@ -165,6 +177,14 @@ class App extends React.Component {
                 cardTrunfo={ card.cardTrunfo }
                 hasTrunfo={ card.hasTrunfo }
               />
+              <button
+                id={ card.cardName }
+                type="button"
+                data-testid="delete-button"
+                onClick={ this.removeCard }
+              >
+                Excluir
+              </button>
             </p>
           ))}
 
