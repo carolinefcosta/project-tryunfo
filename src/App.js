@@ -22,7 +22,7 @@ class App extends React.Component {
       cardTrunfo: false,
       hasTrunfo: false,
       isSaveButtonDisabled: true,
-
+      estadoCard: [],
     };
   }
 
@@ -52,18 +52,22 @@ class App extends React.Component {
       cardImage,
       cardRare,
     } = this.state;
-    if (cardName !== ''
-    && cardDescription !== '' && cardImage !== '' && cardRare !== '') {
-      this.setState({
-        cardName: '',
-        cardDescription: '',
-        cardAttr1: '0',
-        cardAttr2: '0',
-        cardAttr3: '0',
-        cardImage: '',
-        cardRare: 'normal',
-      });
-    }
+    const estadoCard = {
+      cardName,
+      cardDescription,
+      cardImage,
+      cardRare,
+    };
+    this.setState((estadoAnterior) => ({
+      estadoCard: [estadoAnterior.estadoCard, estadoCard],
+      cardName: '',
+      cardDescription: '',
+      cardAttr1: '0',
+      cardAttr2: '0',
+      cardAttr3: '0',
+      cardImage: '',
+      cardRare: 'normal',
+    }));
   }
 
   verifyCardAttr() {
