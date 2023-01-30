@@ -46,6 +46,24 @@ class App extends React.Component {
   };
 
   onSaveButtonClick() {
+    const {
+      cardName,
+      cardDescription,
+      cardImage,
+      cardRare,
+    } = this.state;
+    if (cardName !== ''
+    && cardDescription !== '' && cardImage !== '' && cardRare !== '') {
+      this.setState({
+        cardName: '',
+        cardDescription: '',
+        cardAttr1: '0',
+        cardAttr2: '0',
+        cardAttr3: '0',
+        cardImage: '',
+        cardRare: 'normal',
+      });
+    }
   }
 
   verifyCardAttr() {
