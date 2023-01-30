@@ -117,6 +117,7 @@ class App extends React.Component {
       cardTrunfo,
       hasTrunfo,
       isSaveButtonDisabled,
+      saveCards,
     } = this.state;
     return (
       <div>
@@ -149,7 +150,6 @@ class App extends React.Component {
             hasTrunfo={ hasTrunfo }
           />
         </section>
-
       </div>
     );
   }
