@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
+import './styles/App.css';
 
 class App extends React.Component {
   constructor() {
@@ -133,34 +134,42 @@ class App extends React.Component {
     } = this.state;
     return (
       <div>
-        <section>
-          <h1>Tryunfo</h1>
-          <Form
-            onInputChange={ this.onInputChange }
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            hasTrunfo={ hasTrunfo }
-            isSaveButtonDisabled={ isSaveButtonDisabled }
-            onSaveButtonClick={ this.onSaveButtonClick }
-          />
-          <Card
-            onInputChange={ this.onInputChange }
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            hasTrunfo={ hasTrunfo }
-          />
+        <section className="sectionOne">
+          <title>
+            <h1>Tryunfo</h1>
+          </title>
+          <div className="div-pai">
+            <p>
+              <Form
+                onInputChange={ this.onInputChange }
+                cardName={ cardName }
+                cardDescription={ cardDescription }
+                cardAttr1={ cardAttr1 }
+                cardAttr2={ cardAttr2 }
+                cardAttr3={ cardAttr3 }
+                cardImage={ cardImage }
+                cardRare={ cardRare }
+                cardTrunfo={ cardTrunfo }
+                hasTrunfo={ hasTrunfo }
+                isSaveButtonDisabled={ isSaveButtonDisabled }
+                onSaveButtonClick={ this.onSaveButtonClick }
+              />
+            </p>
+            <p>
+              <Card
+                onInputChange={ this.onInputChange }
+                cardName={ cardName }
+                cardDescription={ cardDescription }
+                cardAttr1={ cardAttr1 }
+                cardAttr2={ cardAttr2 }
+                cardAttr3={ cardAttr3 }
+                cardImage={ cardImage }
+                cardRare={ cardRare }
+                cardTrunfo={ cardTrunfo }
+                hasTrunfo={ hasTrunfo }
+              />
+            </p>
+          </div>
         </section>
         <section>
 
@@ -187,9 +196,7 @@ class App extends React.Component {
               </button>
             </p>
           ))}
-
         </section>
-
       </div>
     );
   }

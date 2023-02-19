@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.div-pai {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+fieldset {
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  width: 300px;
+  box-shadow: 5px 10px 20px black;
+  height: 350px;
+}
+
+.legend {
+  border-radius: 5px;
+  padding: 2px;
+  background-color: rgb(144,238,144);
+  margin: 10px;
+  font-size: 20px;
+}
+
+.div-input-textArea {
+  display: block;
+}
+
+.text-area {
+  margin-top: 5px;
+  display: block;
+}
+
+#name {
+  width: 178px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+}
+
+#textArea {
+  width: 150px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+}
+
+#atrib1 {
+  width: 150px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+}
+
+#atrib2 {
+  margin-top: 5px;
+  width: 150px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+}
+
+#atrib3 {
+  margin-top: 5px;
+  width: 150px;
+  border-radius: 5px;
+  border-color: rgb(144,238,144);
+}
+
+#image {
+  margin-top: 5px;
+  width: 170px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+}
+
+#select {
+  margin-top: 5px;
+  font-family:'Indie Flower', cursive;
+  width: 100px;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+  background-color: rgb(144,238,144);
+}
+
+#button-form {
+  margin-top: 5px;
+  font-family:'Indie Flower', cursive;
+  border-radius: 5px;
+  border-color:  rgb(144,238,144);
+  background-color: rgb(144,238,144);
+}
+
+.main {
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  width: 300px;
+  box-shadow: 5px 10px 20px black;
+  height: 370px;
+  color:  green;
+}
+
+.h1 {
+ 
+
+}
+
+.span {
+
+}
