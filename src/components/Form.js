@@ -54,7 +54,7 @@ class Form extends React.Component {
         <section>
           <div>
             <label htmlFor="atrib1">
-              Atributo 01:
+              Força:
               {' '}
 
               <input
@@ -69,7 +69,7 @@ class Form extends React.Component {
           </div>
           <div>
             <label htmlFor="atrib2">
-              Atributo 02:
+              Ataque:
               {' '}
 
               <input
@@ -84,7 +84,7 @@ class Form extends React.Component {
           </div>
           <div>
             <label htmlFor="atrib3">
-              Atributo 03:
+              Defesa:
               {' '}
 
               <input

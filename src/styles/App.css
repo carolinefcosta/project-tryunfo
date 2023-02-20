@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+body {
+  background-image: url('../img/img.jpg');
+}
+
 .div-pai {
   display: flex;
   justify-content: space-evenly;
@@ -14,12 +18,13 @@ fieldset {
   width: 300px;
   box-shadow: 5px 10px 20px black;
   height: 350px;
+  background-color: rgba(255, 255, 255, 0.747);
 }
 
 .legend {
   border-radius: 5px;
   padding: 2px;
-  background-color: rgb(144,238,144);
+  background-color:  #6495ED;
   margin: 10px;
   font-size: 20px;
 }
@@ -36,40 +41,40 @@ fieldset {
 #name {
   width: 178px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
+  border-color: #6495ED;
 }
 
 #textArea {
   width: 150px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
+  border-color: #6495ED;
 }
 
 #atrib1 {
-  width: 150px;
+  width: 175px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
+  border-color:  #6495ED;
 }
 
 #atrib2 {
   margin-top: 5px;
-  width: 150px;
+  width: 165px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
+  border-color:   #6495ED;
 }
 
 #atrib3 {
   margin-top: 5px;
-  width: 150px;
+  width: 160px;
   border-radius: 5px;
-  border-color: rgb(144,238,144);
+  border-color:  #6495ED;
 }
 
 #image {
   margin-top: 5px;
   width: 170px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
+  border-color:   #6495ED;
 }
 
 #select {
@@ -77,36 +82,61 @@ fieldset {
   font-family:'Indie Flower', cursive;
   width: 100px;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
-  background-color: rgb(144,238,144);
+  border-color:  #6495ED;
+  background-color: #6495ED;
 }
 
 #button-form {
   margin-top: 5px;
   font-family:'Indie Flower', cursive;
   border-radius: 5px;
-  border-color:  rgb(144,238,144);
-  background-color: rgb(144,238,144);
+  border-color:  #6495ED;
+  background-color: #6495ED;
 }
 
 .main {
+  background-color: #6494eda9;
+  border-radius: 10px;
   text-align: center;
   display: block;
-  border-radius: 10px;
-  border: none;
   text-align: center;
   font-family: 'Indie Flower', cursive;
   width: 300px;
   box-shadow: 5px 10px 20px black;
   height: 370px;
-  color:  green;
 }
 
 .h1 {
- 
+  height: 35px;
+  padding: 2px;
+  background-color:rgba(255, 255, 255, 0.856);
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+}
 
+.img {
+  padding:1px ;
+  margin: 1px;
+  border-radius: 10px;
+  height: 100px;
+  width: 150px;
 }
 
 .span {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #6495ED;
+  border: 1px;
+}
 
+.div-teste {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.747);
+  border-radius: 0;
+}
+
+.section-carts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

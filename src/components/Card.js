@@ -28,16 +28,36 @@ class Card extends React.Component {
             className="img"
           />
         </div>
-        <div>
-          <span data-testid="description-card" className="span">{cardDescription}</span>
+        <div className="div-teste">
+          <div>
+            <span data-testid="description-card" className="span">
+              ✨
+              {' '}
+              {cardDescription}
+              {' '}
+              ✨
+            </span>
+          </div>
+          <p data-testid="attr1-card" className="atributos">
+            💪🏻
+            {' '}
+            {cardAttr1}
+          </p>
+          <p data-testid="attr2-card" className="atributos">
+            ⚔️
+            {' '}
+            {cardAttr2}
+          </p>
+          <p data-testid="attr3-card" className="atributos">
+            🛡️
+            {' '}
+            {cardAttr3}
+          </p>
+          <div>
+            <span data-testid="rare-card" className="select">{cardRare}</span>
+          </div>
+          { cardTrunfo === true ? <p data-testid="trunfo-card">Super Trunfo</p> : '' }
         </div>
-        <p data-testid="attr1-card" className="atributos">{cardAttr1}</p>
-        <p data-testid="attr2-card" className="atributos">{cardAttr2}</p>
-        <p data-testid="attr3-card" className="atributos">{cardAttr3}</p>
-        <div>
-          <span data-testid="rare-card" className="select">{cardRare}</span>
-        </div>
-        { cardTrunfo === true ? <p data-testid="trunfo-card">Super Trunfo</p> : '' }
       </main>
     );
   }

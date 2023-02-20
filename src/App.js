@@ -171,7 +171,7 @@ class App extends React.Component {
             </p>
           </div>
         </section>
-        <section>
+        <section className="section-carts">
 
           {saveCards.map((card, i) => (
             <p key={ i }>
@@ -192,7 +192,7 @@ class App extends React.Component {
                 data-testid="delete-button"
                 onClick={ this.removeCard }
               >
-                Excluir
+                🗑️
               </button>
             </p>
           ))}
