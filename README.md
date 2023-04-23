@@ -1,4 +1,4 @@
-## 🃏 Projeto Tryunfo 🃏
+# 🃏 Projeto Tryunfo 🃏
 
 Projeto desenvolvido no módulo de Front-end do curso da [Trybe](https://www.betrybe.com/).
 Foi implementado um jogo no estilo Super Trunfo! Ao utilizar essa aplicação uma pessoa usuária é capaz de:
@@ -26,4 +26,6 @@ Nesse projeto, fui capaz de:
 - Criar formulários utilizando sintaxe JSX com as tags: input, textarea, select, form, checkbox;
 - Transmitir informações de componentes filhos para componentes pais via callbacks;
 
-
+<p align="center">
+  <img width="600px" heigth="600px" src="src/img/trybe-tryunfo.gif" />
+</p>
